@@ -1,0 +1,28 @@
+import java.util.Scanner;
+
+public class P10_Check_Prime {
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+
+        int number = Integer.parseInt(scan.nextLine());
+
+        boolean prime = true;
+        if(number<2){
+            prime = false;
+        }
+        for (int i = 2; i <= Math.sqrt(number); i++) {//	Ако числото е по-малко от 2, значи не е просто
+            //	Всяко друго число първоначално се приема за просто и се проверява в цикъл дали се дели
+            // на числата 2, 3, 4, …, до корен квадратен от n (цялата част).
+
+            if (number % i == 0) {
+                prime = false;
+                break;//излиза от текущия цикъл
+            }
+        }
+        if (prime) {
+            System.out.println("Prime");
+        } else {
+            System.out.println("Not prime");
+        }
+    }
+}
