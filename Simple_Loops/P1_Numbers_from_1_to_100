@@ -1,0 +1,11 @@
+import java.util.Scanner;
+
+public class P1_Numbers_from_1_to_100 {
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+
+        for (int count = 1; count <= 100; count++) {
+            System.out.println(count);
+        }
+    }
+}
