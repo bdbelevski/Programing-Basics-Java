@@ -1,0 +1,24 @@
+import java.util.Scanner;
+
+public class P11_Enter_Even_Number {
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        System.out.println("Enter even number: ");
+        int n = Integer.parseInt(scan.nextLine());
+        do {
+            try {
+                if (n % 2 == 0) {
+                    break;
+                } else {
+                    System.out.println("The number is not even!");
+                    System.out.println("Enter even number: ");
+                    n = Integer.parseInt(scan.nextLine());
+                }
+            } catch (Exception e) {
+                System.out.println("Invalid number!");
+            }
+        }
+        while (true);
+        System.out.println("Even number entered: " + n);
+    }
+}
