@@ -1,0 +1,14 @@
+import java.util.Scanner;
+
+public class P1_Rectangle_of_10x10_Star {
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+
+        for (int row = 0; row < 10; row++) {
+            for (int col = 0; col < 10; col++) {
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+    }
+}
