@@ -1,0 +1,17 @@
+import java.util.Scanner;
+
+public class Hearthstone {
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+
+        int breakTime = Integer.parseInt(scan.nextLine());
+        double cardPrice = Double.parseDouble(scan.nextLine());
+        double adventurePrice = Double.parseDouble(scan.nextLine());
+        double coffeePrice = Double.parseDouble(scan.nextLine());
+
+        int remainingTime = breakTime - 5 - 3*2 - 2*2;
+        double moneySpent = coffeePrice + 3 * cardPrice + 2 * adventurePrice;
+        System.out.printf("%.2f\n", moneySpent);
+        System.out.printf("%d",remainingTime );
+    }
+}
