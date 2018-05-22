@@ -1,0 +1,12 @@
+import java.util.Scanner;
+
+public class P1_Excellent_Result {
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+
+        double a = Double.parseDouble(scan.nextLine());
+        if (a >= 5.50) {
+            System.out.println("Excellent!");
+        }
+    }
+}
