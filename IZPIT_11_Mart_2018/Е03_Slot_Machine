@@ -1,0 +1,26 @@
+import java.util.Scanner;
+
+public class Slot_Machine {
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+
+        char a = scan.nextLine().charAt(0);
+        int an = Integer.parseInt(scan.nextLine());
+        char b = scan.nextLine().charAt(0);
+        int bn = Integer.parseInt(scan.nextLine());
+        char c = scan.nextLine().charAt(0);
+        int cn = Integer.parseInt(scan.nextLine());
+
+        char first = (char)((int)a + an);
+        char second = (char)((int)b + bn);
+        char third = (char)((int)c + cn);
+
+        System.out.printf("%c%c%c\n",first,second,third);
+
+        if(first == '@' && second == '@' && third == '@'){
+            System.out.println("!!! YOU LOSE EVERYTHING !!!");
+        }else if(first == '7' && second == '7' && third == '7'){
+            System.out.println("*** JACKPOT ***");
+        }
+    }
+}
